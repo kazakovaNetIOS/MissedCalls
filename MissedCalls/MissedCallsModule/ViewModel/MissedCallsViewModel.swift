@@ -25,10 +25,10 @@ final class MissedCallsViewModel {
   private var parser: MissedCallsParser
   private var viewData: MissedCallsViewData.CallsData?
 
-  init() {
-    networkService = NetworkService()
-    parser = MissedCallsParser()
-    updateViewData?(.initial)
+  init(networkService: NetworkServiceProtocol, parser: MissedCallsParser) {
+    self.networkService = networkService
+    self.parser = parser
+    updateViewData?(.loading)
   }
 }
 

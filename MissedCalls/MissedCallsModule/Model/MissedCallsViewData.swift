@@ -10,7 +10,6 @@ import Foundation
 typealias Request = MissedCallsViewData.Request
 
 enum MissedCallsViewData {
-  case initial
   case loading
   case success(CallsData)
   case failure(Error)

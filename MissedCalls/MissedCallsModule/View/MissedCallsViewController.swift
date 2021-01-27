@@ -9,13 +9,12 @@ import UIKit
 
 class MissedCallsViewController: UIViewController {
   private let tableCellIdentifier = "MissedCallsTableViewCell"
-  private var viewModel: MissedCallsViewModelProtocol?
+  var viewModel: MissedCallsViewModelProtocol?
 
   @IBOutlet weak var tableView: UITableView!
+  @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
   
   override func viewDidLoad() {
-    // todo needs DI
-    viewModel = MissedCallsViewModel()
     super.viewDidLoad()
 
     setupView()
@@ -33,7 +32,17 @@ class MissedCallsViewController: UIViewController {
 
   private func updateView() {
     viewModel?.updateViewData = { [weak self] viewData in
-      self?.tableView.reloadData()
+      switch viewData {
+        case .success(_):
+          self?.activityIndicator.stopAnimating()
+          self?.tableView.reloadData()
+        case .failure(let error):
+          self?.activityIndicator.stopAnimating()
+          print(error.localizedDescription)
+        case .loading:
+          self?.activityIndicator.startAnimating()
+      }
+
     }
   }
 }
@@ -61,4 +70,13 @@ extension MissedCallsViewController: UITableViewDataSource {
 
 extension MissedCallsViewController: UITableViewDelegate {
 
+}
+
+// MARK: - Instantiation from storybord
+
+extension MissedCallsViewController {
+  static func storyboardInstance() -> UINavigationController? {
+    let storyboard = UIStoryboard(name: String(describing: self), bundle: nil)
+    return storyboard.instantiateInitialViewController() as? UINavigationController
+  }
 }

@@ -10,7 +10,7 @@
 		561B984E25C0BCA3008A40B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B984D25C0BCA3008A40B6 /* AppDelegate.swift */; };
 		561B985025C0BCA3008A40B6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B984F25C0BCA3008A40B6 /* SceneDelegate.swift */; };
 		561B985225C0BCA3008A40B6 /* MissedCallsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B985125C0BCA3008A40B6 /* MissedCallsViewController.swift */; };
-		561B985525C0BCA3008A40B6 /* MissedCalls.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561B985325C0BCA3008A40B6 /* MissedCalls.storyboard */; };
+		561B985525C0BCA3008A40B6 /* MissedCallsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561B985325C0BCA3008A40B6 /* MissedCallsViewController.storyboard */; };
 		561B985725C0BCA8008A40B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 561B985625C0BCA8008A40B6 /* Assets.xcassets */; };
 		561B985A25C0BCA8008A40B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561B985825C0BCA8008A40B6 /* LaunchScreen.storyboard */; };
 		561B986A25C0BD3F008A40B6 /* MissedCallsViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B986925C0BD3F008A40B6 /* MissedCallsViewData.swift */; };
@@ -32,7 +32,7 @@
 		561B984D25C0BCA3008A40B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		561B984F25C0BCA3008A40B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		561B985125C0BCA3008A40B6 /* MissedCallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCallsViewController.swift; sourceTree = "<group>"; };
-		561B985425C0BCA3008A40B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MissedCalls.storyboard; sourceTree = "<group>"; };
+		561B985425C0BCA3008A40B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MissedCallsViewController.storyboard; sourceTree = "<group>"; };
 		561B985625C0BCA8008A40B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		561B985925C0BCA8008A40B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		561B985B25C0BCA8008A40B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 				561B985125C0BCA3008A40B6 /* MissedCallsViewController.swift */,
 				561B987425C0D401008A40B6 /* TestView.swift */,
 				561B987725C0D449008A40B6 /* TestView + Extension.swift */,
-				561B985325C0BCA3008A40B6 /* MissedCalls.storyboard */,
+				561B985325C0BCA3008A40B6 /* MissedCallsViewController.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -246,7 +246,7 @@
 				56AF00F725C20E5E008EAB97 /* SF-Pro-Display-Semibold.otf in Resources */,
 				561B985725C0BCA8008A40B6 /* Assets.xcassets in Resources */,
 				56AF00FA25C210AB008EAB97 /* SF-Pro-Display-Regular.otf in Resources */,
-				561B985525C0BCA3008A40B6 /* MissedCalls.storyboard in Resources */,
+				561B985525C0BCA3008A40B6 /* MissedCallsViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,12 +274,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		561B985325C0BCA3008A40B6 /* MissedCalls.storyboard */ = {
+		561B985325C0BCA3008A40B6 /* MissedCallsViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				561B985425C0BCA3008A40B6 /* Base */,
 			);
-			name = MissedCalls.storyboard;
+			name = MissedCallsViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		561B985825C0BCA8008A40B6 /* LaunchScreen.storyboard */ = {

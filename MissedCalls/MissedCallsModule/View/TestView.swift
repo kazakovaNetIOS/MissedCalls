@@ -8,7 +8,7 @@
 import UIKit
 
 class TestView: UIView {
-  var viewData: MissedCallsViewData = .initial {
+  var viewData: MissedCallsViewData = .loading {
     didSet {
       setNeedsLayout()
     }
