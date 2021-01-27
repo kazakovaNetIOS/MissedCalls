@@ -27,7 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		561B984A25C0BCA3008A40B6 /* TestMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		561B984A25C0BCA3008A40B6 /* MissedCalls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MissedCalls.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		561B984D25C0BCA3008A40B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		561B984F25C0BCA3008A40B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		561B985125C0BCA3008A40B6 /* MissedCallsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCallsViewController.swift; sourceTree = "<group>"; };
@@ -62,7 +62,7 @@
 		561B984125C0BCA3008A40B6 = {
 			isa = PBXGroup;
 			children = (
-				561B984C25C0BCA3008A40B6 /* TestMVVM */,
+				561B984C25C0BCA3008A40B6 /* MissedCalls */,
 				561B984B25C0BCA3008A40B6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,12 +70,12 @@
 		561B984B25C0BCA3008A40B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				561B984A25C0BCA3008A40B6 /* TestMVVM.app */,
+				561B984A25C0BCA3008A40B6 /* MissedCalls.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		561B984C25C0BCA3008A40B6 /* TestMVVM */ = {
+		561B984C25C0BCA3008A40B6 /* MissedCalls */ = {
 			isa = PBXGroup;
 			children = (
 				56AF00F425C20DB9008EAB97 /* SupportingFiles */,
@@ -87,7 +87,7 @@
 				561B985825C0BCA8008A40B6 /* LaunchScreen.storyboard */,
 				561B985B25C0BCA8008A40B6 /* Info.plist */,
 			);
-			path = TestMVVM;
+			path = MissedCalls;
 			sourceTree = "<group>";
 		};
 		561B986325C0BCE7008A40B6 /* View */ = {
@@ -175,9 +175,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		561B984925C0BCA3008A40B6 /* TestMVVM */ = {
+		561B984925C0BCA3008A40B6 /* MissedCalls */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 561B985E25C0BCA8008A40B6 /* Build configuration list for PBXNativeTarget "TestMVVM" */;
+			buildConfigurationList = 561B985E25C0BCA8008A40B6 /* Build configuration list for PBXNativeTarget "MissedCalls" */;
 			buildPhases = (
 				561B984625C0BCA3008A40B6 /* Sources */,
 				561B984725C0BCA3008A40B6 /* Frameworks */,
@@ -187,9 +187,9 @@
 			);
 			dependencies = (
 			);
-			name = TestMVVM;
+			name = MissedCalls;
 			productName = TestMVVM;
-			productReference = 561B984A25C0BCA3008A40B6 /* TestMVVM.app */;
+			productReference = 561B984A25C0BCA3008A40B6 /* MissedCalls.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -206,7 +206,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 561B984525C0BCA3008A40B6 /* Build configuration list for PBXProject "TestMVVM" */;
+			buildConfigurationList = 561B984525C0BCA3008A40B6 /* Build configuration list for PBXProject "MissedCalls" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -219,7 +219,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				561B984925C0BCA3008A40B6 /* TestMVVM */,
+				561B984925C0BCA3008A40B6 /* MissedCalls */,
 			);
 		};
 /* End PBXProject section */
@@ -404,12 +404,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLVL4AD94D;
-				INFOPLIST_FILE = TestMVVM/Info.plist;
+				INFOPLIST_FILE = MissedCalls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.kazakova-net.TestMVVM";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.kazakova-net.MissedCalls";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -423,12 +423,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DLVL4AD94D;
-				INFOPLIST_FILE = TestMVVM/Info.plist;
+				INFOPLIST_FILE = MissedCalls/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "ru.kazakova-net.TestMVVM";
+				PRODUCT_BUNDLE_IDENTIFIER = "ru.kazakova-net.MissedCalls";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -438,7 +438,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		561B984525C0BCA3008A40B6 /* Build configuration list for PBXProject "TestMVVM" */ = {
+		561B984525C0BCA3008A40B6 /* Build configuration list for PBXProject "MissedCalls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				561B985C25C0BCA8008A40B6 /* Debug */,
@@ -447,7 +447,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		561B985E25C0BCA8008A40B6 /* Build configuration list for PBXNativeTarget "TestMVVM" */ = {
+		561B985E25C0BCA8008A40B6 /* Build configuration list for PBXNativeTarget "MissedCalls" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				561B985F25C0BCA8008A40B6 /* Debug */,
