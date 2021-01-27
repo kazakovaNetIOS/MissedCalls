@@ -21,6 +21,9 @@
 		568A5F8B25C1CF820077F498 /* MissedCallsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568A5F8925C1CF820077F498 /* MissedCallsTableViewCell.xib */; };
 		568A5F8F25C1D2410077F498 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A5F8E25C1D2410077F498 /* NetworkService.swift */; };
 		568A5F9425C1DA290077F498 /* MissedCallsParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A5F9325C1DA290077F498 /* MissedCallsParser.swift */; };
+		56AF00F725C20E5E008EAB97 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56AF00F625C20E5E008EAB97 /* SF-Pro-Display-Semibold.otf */; };
+		56AF00FA25C210AB008EAB97 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56AF00F925C210AB008EAB97 /* SF-Pro-Display-Regular.otf */; };
+		56AF00FD25C21635008EAB97 /* SF-Pro-Display-LightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56AF00FC25C21635008EAB97 /* SF-Pro-Display-LightItalic.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +43,9 @@
 		568A5F8925C1CF820077F498 /* MissedCallsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissedCallsTableViewCell.xib; sourceTree = "<group>"; };
 		568A5F8E25C1D2410077F498 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		568A5F9325C1DA290077F498 /* MissedCallsParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCallsParser.swift; sourceTree = "<group>"; };
+		56AF00F625C20E5E008EAB97 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
+		56AF00F925C210AB008EAB97 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		56AF00FC25C21635008EAB97 /* SF-Pro-Display-LightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-LightItalic.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,7 @@
 		561B984C25C0BCA3008A40B6 /* TestMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				56AF00F425C20DB9008EAB97 /* SupportingFiles */,
 				568A5F8D25C1D1F40077F498 /* Services */,
 				561B984D25C0BCA3008A40B6 /* AppDelegate.swift */,
 				561B984F25C0BCA3008A40B6 /* SceneDelegate.swift */,
@@ -147,6 +154,24 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		56AF00F425C20DB9008EAB97 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				56AF00F525C20E5E008EAB97 /* Fonts */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		56AF00F525C20E5E008EAB97 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				56AF00FC25C21635008EAB97 /* SF-Pro-Display-LightItalic.otf */,
+				56AF00F925C210AB008EAB97 /* SF-Pro-Display-Regular.otf */,
+				56AF00F625C20E5E008EAB97 /* SF-Pro-Display-Semibold.otf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -206,8 +231,11 @@
 			files = (
 				568A5F8B25C1CF820077F498 /* MissedCallsTableViewCell.xib in Resources */,
 				561B985A25C0BCA8008A40B6 /* LaunchScreen.storyboard in Resources */,
+				56AF00F725C20E5E008EAB97 /* SF-Pro-Display-Semibold.otf in Resources */,
 				561B985725C0BCA8008A40B6 /* Assets.xcassets in Resources */,
+				56AF00FA25C210AB008EAB97 /* SF-Pro-Display-Regular.otf in Resources */,
 				561B985525C0BCA3008A40B6 /* MissedCalls.storyboard in Resources */,
+				56AF00FD25C21635008EAB97 /* SF-Pro-Display-LightItalic.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,7 +412,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.kazakova-net.TestMVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -403,7 +431,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "ru.kazakova-net.TestMVVM";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

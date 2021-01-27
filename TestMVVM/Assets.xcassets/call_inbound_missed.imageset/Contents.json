@@ -1,6 +1,7 @@
 {
-  "colors" : [
+  "images" : [
     {
+      "filename" : "call_inbound_missed.pdf",
       "idiom" : "universal"
     }
   ],

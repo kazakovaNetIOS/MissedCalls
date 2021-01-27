@@ -22,9 +22,11 @@ enum MissedCallsViewData {
 
   // MARK: - Request
   struct Request: Codable {
-    let id, state: String?
+    let id: String?
+    let state: String?
     let client: Client?
-    let type, created: String?
+    let type: String?
+    let created: String?
     let businessNumber: BusinessNumber?
     let origin: String?
     let favorite: Bool?
@@ -33,12 +35,14 @@ enum MissedCallsViewData {
 
   // MARK: - BusinessNumber
   struct BusinessNumber: Codable {
-    let number, label: String?
+    let number: String?
+    let label: String?
   }
 
   // MARK: - Client
   struct Client: Codable {
-    let address, name: String?
+    let address: String?
+    let name: String?
 
     enum CodingKeys: String, CodingKey {
       case address
