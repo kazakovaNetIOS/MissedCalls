@@ -24,7 +24,7 @@
 	<array>
 		<string>SF-Pro-Display-Semibold.otf</string>
 		<string>SF-Pro-Display-Regular.otf</string>
-		<string>SF-Pro-Display-LightItalic.otf</string>
+		<string>SF-Pro-Display-RegularItalic.otf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

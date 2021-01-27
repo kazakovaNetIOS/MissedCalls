@@ -13,6 +13,7 @@ class MissedCallsTableViewCell: UITableViewCell {
   @IBOutlet weak var nameLabel: UILabel!
   @IBOutlet weak var phoneLabel: UILabel!
   @IBOutlet weak var durationLabel: UILabel!
+  @IBOutlet weak var creationLabel: UILabel!
 
   override func awakeFromNib() {
     setupViews()
@@ -31,6 +32,7 @@ class MissedCallsTableViewCell: UITableViewCell {
     }
 
     durationLabel.text = model.duration
+    creationLabel.text = model.created
   }
 }
 

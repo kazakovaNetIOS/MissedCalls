@@ -8,8 +8,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="SF-Pro-Display-LightItalic.otf">
-            <string>SFProDisplay-LightItalic</string>
+        <array key="SF-Pro-Display-Regular.otf">
+            <string>SFProDisplay-Regular</string>
+        </array>
+        <array key="SF-Pro-Display-RegularItalic.otf">
+            <string>SFProDisplay-Italic</string>
         </array>
         <array key="SF-Pro-Display-Semibold.otf">
             <string>SFProDisplay-Semibold</string>
@@ -18,7 +21,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="MissedCallsTableViewCell" customModule="TestMVVM" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="124" id="KGk-i7-Jjw" customClass="MissedCallsTableViewCell" customModule="MissedCalls" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="451" height="124"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -48,16 +51,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-zu-4Wx">
-                                <rect key="frame" x="20.5" y="68" width="33.5" height="28"/>
-                                <fontDescription key="fontDescription" name="SFProDisplay-LightItalic" family="SF Pro Display" pointSize="15"/>
-                                <color key="textColor" red="0.18626484269999999" green="0.1862975955" blue="0.18625769019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="21" y="68" width="32" height="28"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Italic" family="SF Pro Display" pointSize="13"/>
+                                <color key="textColor" red="0.37582743169999999" green="0.37588590379999998" blue="0.37581461669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF4-ml-VbT">
+                                <rect key="frame" x="371" y="80" width="32" height="16"/>
+                                <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
+                                <color key="textColor" red="0.37582743169999999" green="0.37588590379999998" blue="0.37581461669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="aF4-ml-VbT" secondAttribute="trailing" constant="16" id="CaF-7S-fhn"/>
                             <constraint firstItem="tvV-om-OlK" firstAttribute="leading" secondItem="oBs-1L-ReF" secondAttribute="leading" constant="17" id="MPR-Dz-Y39"/>
                             <constraint firstItem="tvV-om-OlK" firstAttribute="top" secondItem="oBs-1L-ReF" secondAttribute="top" constant="16" id="VcZ-51-ZyC"/>
+                            <constraint firstAttribute="bottom" secondItem="aF4-ml-VbT" secondAttribute="bottom" constant="16" id="ZBb-LX-JJz"/>
                             <constraint firstItem="2Zo-ga-HKR" firstAttribute="leading" secondItem="oBs-1L-ReF" secondAttribute="leading" constant="72" id="bt5-Tl-JES"/>
                             <constraint firstItem="jVo-FO-vUV" firstAttribute="top" secondItem="2Zo-ga-HKR" secondAttribute="bottom" constant="8" id="d89-HS-hal"/>
                             <constraint firstAttribute="bottom" secondItem="Ash-zu-4Wx" secondAttribute="bottom" constant="16" id="hFB-hD-hTS"/>
@@ -78,6 +89,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="bottomLayer" destination="oBs-1L-ReF" id="a3L-gh-gOZ"/>
+                <outlet property="creationLabel" destination="aF4-ml-VbT" id="lj3-gM-vCy"/>
                 <outlet property="durationLabel" destination="Ash-zu-4Wx" id="AUC-Wa-a9C"/>
                 <outlet property="nameLabel" destination="2Zo-ga-HKR" id="uNY-kf-V9C"/>
                 <outlet property="phoneLabel" destination="jVo-FO-vUV" id="sDa-Jl-YVO"/>
