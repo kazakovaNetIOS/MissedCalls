@@ -24,6 +24,7 @@
 		569A585D25C21E6F008DF976 /* SF-Pro-Display-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 569A585C25C21E6F008DF976 /* SF-Pro-Display-RegularItalic.otf */; };
 		56AF00F725C20E5E008EAB97 /* SF-Pro-Display-Semibold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56AF00F625C20E5E008EAB97 /* SF-Pro-Display-Semibold.otf */; };
 		56AF00FA25C210AB008EAB97 /* SF-Pro-Display-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56AF00F925C210AB008EAB97 /* SF-Pro-Display-Regular.otf */; };
+		56C534DE25C225620080F255 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C534DD25C225610080F255 /* Date+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		569A585C25C21E6F008DF976 /* SF-Pro-Display-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-RegularItalic.otf"; sourceTree = "<group>"; };
 		56AF00F625C20E5E008EAB97 /* SF-Pro-Display-Semibold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Semibold.otf"; sourceTree = "<group>"; };
 		56AF00F925C210AB008EAB97 /* SF-Pro-Display-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Regular.otf"; sourceTree = "<group>"; };
+		56C534DD25C225610080F255 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 		561B984C25C0BCA3008A40B6 /* MissedCalls */ = {
 			isa = PBXGroup;
 			children = (
+				56C534DC25C225610080F255 /* Extensions */,
 				56AF00F425C20DB9008EAB97 /* SupportingFiles */,
 				568A5F8D25C1D1F40077F498 /* Services */,
 				561B984D25C0BCA3008A40B6 /* AppDelegate.swift */,
@@ -172,6 +175,14 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		56C534DC25C225610080F255 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				56C534DD25C225610080F255 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				568A5F8A25C1CF820077F498 /* MissedCallsTableViewCell.swift in Sources */,
+				56C534DE25C225620080F255 /* Date+Extensions.swift in Sources */,
 				561B987525C0D401008A40B6 /* TestView.swift in Sources */,
 				561B986F25C0C562008A40B6 /* MissedCallsViewModel.swift in Sources */,
 				561B985225C0BCA3008A40B6 /* MissedCallsViewController.swift in Sources */,
