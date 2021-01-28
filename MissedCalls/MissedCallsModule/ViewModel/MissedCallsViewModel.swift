@@ -7,10 +7,6 @@
 
 import Foundation
 
-enum Constants {
-  static let url = "https://5e3c202ef2cb300014391b5a.mockapi.io/testapi"
-}
-
 protocol MissedCallsViewModelProtocol {
   var updateViewData: ((ViewData) -> ())? { get set }
 

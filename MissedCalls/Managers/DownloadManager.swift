@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum Constants {
+  static let url = "https://5e3c202ef2cb300014391b5a.mockapi.io/testapi"
+}
+
 protocol DownloadManagerProtocol {
   var loadData: ((Result<ViewData.CallsData, Error>?) -> ())? { get set }
 
@@ -32,17 +36,17 @@ class DownloadManager {
 extension DownloadManager: DownloadManagerProtocol {
   func startFetch() {
     DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-      if let data = try? self?.fileStorage.loadFromFile() {
-        self?.processParseResult(result: .success(data))
-      }
-
       self?.networkService.sendNetworkRequest(for: Constants.url) { [weak self] (result) in
         switch result {
           case .success(let data):
             let parseResult = self?.parser.parseDataList(from: data)
             self?.processParseResult(result: parseResult)
           case .failure(let error):
-            self?.loadData?(.failure(error))
+            if let data = try? self?.fileStorage.loadFromFile() {
+              self?.processParseResult(result: .success(data))
+            } else {
+              self?.loadData?(.failure(error))
+            }
         }
       }
     }
