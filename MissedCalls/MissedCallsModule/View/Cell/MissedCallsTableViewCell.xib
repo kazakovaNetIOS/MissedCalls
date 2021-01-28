@@ -45,7 +45,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVo-FO-vUV">
-                                <rect key="frame" x="72" y="44.5" width="41.5" height="20.5"/>
+                                <rect key="frame" x="72" y="44.5" width="331" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.18626484269999999" green="0.1862975955" blue="0.18625769019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -66,10 +66,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="aF4-ml-VbT" secondAttribute="trailing" constant="16" id="CaF-7S-fhn"/>
+                            <constraint firstItem="jVo-FO-vUV" firstAttribute="top" secondItem="oBs-1L-ReF" secondAttribute="top" constant="23" id="EoQ-z4-PpV"/>
                             <constraint firstItem="tvV-om-OlK" firstAttribute="leading" secondItem="oBs-1L-ReF" secondAttribute="leading" constant="17" id="MPR-Dz-Y39"/>
                             <constraint firstItem="tvV-om-OlK" firstAttribute="top" secondItem="oBs-1L-ReF" secondAttribute="top" constant="16" id="VcZ-51-ZyC"/>
                             <constraint firstAttribute="bottom" secondItem="aF4-ml-VbT" secondAttribute="bottom" constant="16" id="ZBb-LX-JJz"/>
                             <constraint firstItem="2Zo-ga-HKR" firstAttribute="leading" secondItem="oBs-1L-ReF" secondAttribute="leading" constant="72" id="bt5-Tl-JES"/>
+                            <constraint firstAttribute="trailing" secondItem="jVo-FO-vUV" secondAttribute="trailing" constant="16" id="cwM-tX-5TF"/>
                             <constraint firstItem="jVo-FO-vUV" firstAttribute="top" secondItem="2Zo-ga-HKR" secondAttribute="bottom" constant="8" id="d89-HS-hal"/>
                             <constraint firstAttribute="bottom" secondItem="Ash-zu-4Wx" secondAttribute="bottom" constant="16" id="hFB-hD-hTS"/>
                             <constraint firstItem="Ash-zu-4Wx" firstAttribute="centerX" secondItem="tvV-om-OlK" secondAttribute="centerX" id="icH-Y9-UMo"/>
@@ -78,6 +80,11 @@
                             <constraint firstItem="jVo-FO-vUV" firstAttribute="leading" secondItem="oBs-1L-ReF" secondAttribute="leading" constant="72" id="ycO-2o-AAd"/>
                             <constraint firstAttribute="trailing" secondItem="2Zo-ga-HKR" secondAttribute="trailing" constant="16" id="yuI-gT-IjR"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EoQ-z4-PpV"/>
+                            </mask>
+                        </variation>
                     </view>
                 </subviews>
                 <constraints>
@@ -94,6 +101,8 @@
                 <outlet property="durationLabel" destination="Ash-zu-4Wx" id="AUC-Wa-a9C"/>
                 <outlet property="nameLabel" destination="2Zo-ga-HKR" id="uNY-kf-V9C"/>
                 <outlet property="phoneLabel" destination="jVo-FO-vUV" id="sDa-Jl-YVO"/>
+                <outlet property="phoneToName" destination="d89-HS-hal" id="lGU-4h-3py"/>
+                <outlet property="phoneToTop" destination="EoQ-z4-PpV" id="ZKS-LG-lxx"/>
             </connections>
             <point key="canvasLocation" x="-205.07246376811597" y="90.401785714285708"/>
         </tableViewCell>
