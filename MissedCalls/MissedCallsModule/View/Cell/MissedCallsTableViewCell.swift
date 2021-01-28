@@ -28,6 +28,8 @@ class MissedCallsTableViewCell: UITableViewCell {
     } else {
       nameLabel.isHidden = true
       phoneLabel.font = UIFont(name: "SF-Pro-Display-Semibold", size: 17)
+      phoneLabel.translatesAutoresizingMaskIntoConstraints = false
+      // todo
       phoneLabel.topAnchor.constraint(equalTo: topAnchor, constant: 23).isActive = true
     }
 

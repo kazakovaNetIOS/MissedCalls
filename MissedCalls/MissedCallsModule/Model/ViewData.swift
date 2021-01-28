@@ -1,5 +1,5 @@
 //
-//  MissedCallsViewData.swift
+//  ViewData.swift
 //  MissedCalls
 //
 //  Created by Natalia Kazakova on 27.01.2021.
@@ -7,9 +7,9 @@
 
 import Foundation
 
-typealias Request = MissedCallsViewData.Request
+typealias Request = ViewData.Request
 
-enum MissedCallsViewData {
+enum ViewData {
   case loading
   case success(CallsData)
   case failure(Error)

@@ -24,7 +24,7 @@ extension ParseError: LocalizedError {
 }
 
 final class MissedCallsParser {
-  typealias Model = MissedCallsViewData.CallsData
+  typealias Model = ViewData.CallsData
 
   func parseDataList(from data: Data) -> Result<Model, ParseError> {
     do {

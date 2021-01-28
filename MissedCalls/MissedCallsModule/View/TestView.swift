@@ -8,7 +8,7 @@
 import UIKit
 
 class TestView: UIView {
-  var viewData: MissedCallsViewData = .loading {
+  var viewData: ViewData = .loading {
     didSet {
       setNeedsLayout()
     }
@@ -39,7 +39,7 @@ class TestView: UIView {
 }
 
 private extension TestView {
-  func update(viewData: MissedCallsViewData.CallsData?, isHidden: Bool) {
+  func update(viewData: ViewData.CallsData?, isHidden: Bool) {
 //    imageView.image = UIImage(named: viewData?.icon ?? "")
 //    titleLabel.text = viewData?.title
 //    descriptionLabel.text = viewData?.description

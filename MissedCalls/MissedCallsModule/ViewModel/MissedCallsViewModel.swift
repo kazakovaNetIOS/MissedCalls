@@ -12,7 +12,7 @@ enum Constants {
 }
 
 protocol MissedCallsViewModelProtocol {
-  var updateViewData: ((MissedCallsViewData) -> ())? { get set }
+  var updateViewData: ((ViewData) -> ())? { get set }
 
   func numberOfItemsInSection(section: Int) -> Int
   func viewDataForIndexPath(indexPath: IndexPath) -> Request?
@@ -20,10 +20,10 @@ protocol MissedCallsViewModelProtocol {
 }
 
 final class MissedCallsViewModel {
-  public var updateViewData: ((MissedCallsViewData) -> ())?
+  public var updateViewData: ((ViewData) -> ())?
   private var networkService: NetworkServiceProtocol
   private var parser: MissedCallsParser
-  private var viewData: MissedCallsViewData.CallsData?
+  private var viewData: ViewData.CallsData?
 
   init(networkService: NetworkServiceProtocol, parser: MissedCallsParser) {
     self.networkService = networkService

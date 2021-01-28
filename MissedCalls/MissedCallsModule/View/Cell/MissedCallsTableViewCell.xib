@@ -38,26 +38,26 @@
                                     <constraint firstAttribute="width" constant="40" id="Ugh-3z-fpR"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zo-ga-HKR">
-                                <rect key="frame" x="72" y="16" width="42" height="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Zo-ga-HKR">
+                                <rect key="frame" x="72" y="16" width="331" height="20.5"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Semibold" family="SF Pro Display" pointSize="17"/>
                                 <color key="textColor" red="0.18626484269999999" green="0.1862975955" blue="0.18625769019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVo-FO-vUV">
-                                <rect key="frame" x="72" y="44" width="41.5" height="20.5"/>
+                                <rect key="frame" x="72" y="44.5" width="41.5" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.18626484269999999" green="0.1862975955" blue="0.18625769019999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ash-zu-4Wx">
-                                <rect key="frame" x="21" y="68" width="32" height="28"/>
+                                <rect key="frame" x="22" y="68" width="30" height="28"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Italic" family="SF Pro Display" pointSize="13"/>
                                 <color key="textColor" red="0.37582743169999999" green="0.37588590379999998" blue="0.37581461669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF4-ml-VbT">
-                                <rect key="frame" x="371" y="80" width="32" height="16"/>
+                                <rect key="frame" x="373" y="80" width="30" height="16"/>
                                 <fontDescription key="fontDescription" name="SFProDisplay-Regular" family="SF Pro Display" pointSize="13"/>
                                 <color key="textColor" red="0.37582743169999999" green="0.37588590379999998" blue="0.37581461669999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -76,6 +76,7 @@
                             <constraint firstItem="2Zo-ga-HKR" firstAttribute="top" secondItem="oBs-1L-ReF" secondAttribute="top" constant="16" id="lHl-G9-9n0"/>
                             <constraint firstItem="Ash-zu-4Wx" firstAttribute="top" secondItem="tvV-om-OlK" secondAttribute="bottom" constant="12" id="xS8-JU-pOz"/>
                             <constraint firstItem="jVo-FO-vUV" firstAttribute="leading" secondItem="oBs-1L-ReF" secondAttribute="leading" constant="72" id="ycO-2o-AAd"/>
+                            <constraint firstAttribute="trailing" secondItem="2Zo-ga-HKR" secondAttribute="trailing" constant="16" id="yuI-gT-IjR"/>
                         </constraints>
                     </view>
                 </subviews>

@@ -9,28 +9,17 @@ import UIKit
 
 class MissedCallsViewController: UIViewController {
   private let tableCellIdentifier = "MissedCallsTableViewCell"
-  var viewModel: MissedCallsViewModelProtocol?
 
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+
+  var viewModel: MissedCallsViewModelProtocol?
   
   override func viewDidLoad() {
     super.viewDidLoad()
 
     setupView()
-    updateView()
 
-    viewModel?.startFetch()
-  }
-
-  private func setupView() {
-    tableView.register(UINib(nibName: tableCellIdentifier, bundle: nil),
-                            forCellReuseIdentifier: tableCellIdentifier)
-    tableView.dataSource = self
-    tableView.delegate = self
-  }
-
-  private func updateView() {
     viewModel?.updateViewData = { [weak self] viewData in
       switch viewData {
         case .success(_):
@@ -42,8 +31,19 @@ class MissedCallsViewController: UIViewController {
         case .loading:
           self?.activityIndicator.startAnimating()
       }
-
     }
+    viewModel?.startFetch()
+  }
+}
+
+// MARK: - Private
+
+private extension MissedCallsViewController {
+  func setupView() {
+    tableView.register(UINib(nibName: tableCellIdentifier, bundle: nil),
+                       forCellReuseIdentifier: tableCellIdentifier)
+    tableView.dataSource = self
+    tableView.delegate = self
   }
 }
 
@@ -69,7 +69,13 @@ extension MissedCallsViewController: UITableViewDataSource {
 // MARK: - UITableViewDelegate
 
 extension MissedCallsViewController: UITableViewDelegate {
-
+  func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    guard let viewData = viewModel?.viewDataForIndexPath(indexPath: indexPath),
+          let detailNavVC = CallDetailsViewController.storyboardInstance(),
+          let detailVC = detailNavVC.topViewController as? CallDetailsViewController else { return }
+    detailVC.viewModel = CallDetailsViewModel(viewData: viewData)
+    present(detailNavVC, animated: true)
+  }
 }
 
 // MARK: - Instantiation from storybord
