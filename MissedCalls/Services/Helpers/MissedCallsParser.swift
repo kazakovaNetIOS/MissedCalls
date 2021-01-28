@@ -24,15 +24,13 @@ extension ParseError: LocalizedError {
 }
 
 final class MissedCallsParser {
-  typealias Model = ViewData.CallsData
-
-  func parseDataList(from data: Data) -> Result<Model, ParseError> {
+  func parseDataList(from data: Data) -> Result<ViewData.CallsData, ParseError> {
     do {
       guard (try JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject]) != nil else {
         return .failure(.invalidJson)
       }
 
-      let model = try JSONDecoder().decode(Model.self, from: data)
+      let model = try JSONDecoder().decode(ViewData.CallsData.self, from: data)
       return .success(model)
     } catch {
       return .failure(.invalidJson)

@@ -14,6 +14,9 @@ enum ViewData {
   case success(CallsData)
   case failure(Error)
 
+  static let documentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first
+  static let archiveURL = documentsDirectory?.appendingPathComponent("missedCalls")
+
   // MARK: - CallsData
   struct CallsData: Codable {
     let requests: [Request]?

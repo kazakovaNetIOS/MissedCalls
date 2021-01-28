@@ -16,18 +16,19 @@ protocol MissedCallsViewModelProtocol {
 
   func numberOfItemsInSection(section: Int) -> Int
   func viewDataForIndexPath(indexPath: IndexPath) -> Request?
-  func startFetch()
+  func start()
 }
 
 final class MissedCallsViewModel {
   public var updateViewData: ((ViewData) -> ())?
-  private var networkService: NetworkServiceProtocol
-  private var parser: MissedCallsParser
+  private var downloadManager: DownloadManagerProtocol
   private var viewData: ViewData.CallsData?
 
-  init(networkService: NetworkServiceProtocol, parser: MissedCallsParser) {
-    self.networkService = networkService
-    self.parser = parser
+  init(downloadManager: DownloadManagerProtocol) {
+    self.downloadManager = downloadManager
+    self.downloadManager.loadData = { [weak self] result in
+      self?.processParseResult(result: result)
+    }
     updateViewData?(.loading)
   }
 }
@@ -43,29 +44,17 @@ extension MissedCallsViewModel: MissedCallsViewModelProtocol {
     return viewData?.requests?.count ?? 0
   }
 
-  public func startFetch() {
+  public func start() {
     updateViewData?(.loading)
 
-    DispatchQueue.global(qos: .userInitiated).async { [weak self] in
-      self?.networkService.sendNetworkRequest(for: Constants.url) { [weak self] (result) in
-        switch result {
-          case .success(let data):
-            let parseResult = self?.parser.parseDataList(from: data)
-            self?.processParseResult(result: parseResult)
-          case .failure(let error):
-            self?.populateOnMainQueue { [weak self] in
-              self?.updateViewData?(.failure(error))
-            }
-        }
-      }
-    }
+    downloadManager.startFetch()
   }
 }
 
 // MARK: - Private
 
 private extension MissedCallsViewModel {
-  func processParseResult(result: Result<MissedCallsParser.Model, ParseError>?) {
+  func processParseResult(result: Result<ViewData.CallsData, Error>?) {
     switch result {
       case .success(let loadedData):
         viewData = loadedData

@@ -20,7 +20,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
       fatalError("Can't start application")
     }
 
-    missedCallsVC.viewModel = MissedCallsViewModel(networkService: NetworkService(), parser: MissedCallsParser())
+    let downloadManager = DownloadManager(networkService: NetworkService(),
+                                          parser: MissedCallsParser(),
+                                          fileStrorage: FileStorage())
+    missedCallsVC.viewModel = MissedCallsViewModel(downloadManager: downloadManager)
 
     window.rootViewController = navVC
     self.window = window

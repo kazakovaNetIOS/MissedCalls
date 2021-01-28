@@ -28,6 +28,8 @@
 		56C534EB25C234CE0080F255 /* CallDetailsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56C534EA25C234CE0080F255 /* CallDetailsViewController.storyboard */; };
 		56C534EE25C2368F0080F255 /* SF-Pro-Display-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 56C534ED25C2368F0080F255 /* SF-Pro-Display-Bold.otf */; };
 		56C534F125C237FE0080F255 /* CallDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C534F025C237FE0080F255 /* CallDetailsViewModel.swift */; };
+		56C534F525C2A1310080F255 /* FileStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C534F425C2A1310080F255 /* FileStorage.swift */; };
+		56C534F925C2A2920080F255 /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C534F825C2A2920080F255 /* DownloadManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		56C534EA25C234CE0080F255 /* CallDetailsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CallDetailsViewController.storyboard; sourceTree = "<group>"; };
 		56C534ED25C2368F0080F255 /* SF-Pro-Display-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Pro-Display-Bold.otf"; sourceTree = "<group>"; };
 		56C534F025C237FE0080F255 /* CallDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallDetailsViewModel.swift; sourceTree = "<group>"; };
+		56C534F425C2A1310080F255 /* FileStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileStorage.swift; sourceTree = "<group>"; };
+		56C534F825C2A2920080F255 /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +90,7 @@
 		561B984C25C0BCA3008A40B6 /* MissedCalls */ = {
 			isa = PBXGroup;
 			children = (
+				56C534F725C2A26F0080F255 /* Managers */,
 				561B984D25C0BCA3008A40B6 /* AppDelegate.swift */,
 				561B986625C0BCF0008A40B6 /* MissedCallsModule */,
 				56C534E425C2344F0080F255 /* CallDetailsModule */,
@@ -156,6 +161,7 @@
 		568A5F9225C1DA110077F498 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				56C534F425C2A1310080F255 /* FileStorage.swift */,
 				568A5F9325C1DA290077F498 /* MissedCallsParser.swift */,
 			);
 			path = Helpers;
@@ -214,6 +220,14 @@
 				56C534F025C237FE0080F255 /* CallDetailsViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		56C534F725C2A26F0080F255 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				56C534F825C2A2920080F255 /* DownloadManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -298,12 +312,14 @@
 				561B986F25C0C562008A40B6 /* MissedCallsViewModel.swift in Sources */,
 				561B985225C0BCA3008A40B6 /* MissedCallsViewController.swift in Sources */,
 				568A5F8F25C1D2410077F498 /* NetworkService.swift in Sources */,
+				56C534F525C2A1310080F255 /* FileStorage.swift in Sources */,
 				561B984E25C0BCA3008A40B6 /* AppDelegate.swift in Sources */,
 				56C534F125C237FE0080F255 /* CallDetailsViewModel.swift in Sources */,
 				561B986A25C0BD3F008A40B6 /* ViewData.swift in Sources */,
 				561B987825C0D449008A40B6 /* TestView + Extension.swift in Sources */,
 				56C534E825C234AB0080F255 /* CallDetailsViewController.swift in Sources */,
 				568A5F9425C1DA290077F498 /* MissedCallsParser.swift in Sources */,
+				56C534F925C2A2920080F255 /* DownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -32,7 +32,7 @@ class MissedCallsViewController: UIViewController {
           self?.activityIndicator.startAnimating()
       }
     }
-    viewModel?.startFetch()
+    viewModel?.start()
   }
 }
 
