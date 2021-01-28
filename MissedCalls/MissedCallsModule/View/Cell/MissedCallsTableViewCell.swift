@@ -14,6 +14,8 @@ class MissedCallsTableViewCell: UITableViewCell {
   @IBOutlet weak var phoneLabel: UILabel!
   @IBOutlet weak var durationLabel: UILabel!
   @IBOutlet weak var creationLabel: UILabel!
+  @IBOutlet weak var phoneToName: NSLayoutConstraint!
+  @IBOutlet weak var phoneToTop: NSLayoutConstraint!
 
   override func awakeFromNib() {
     setupViews()
@@ -24,13 +26,14 @@ class MissedCallsTableViewCell: UITableViewCell {
 
     if let clientName = model.client?.name {
       nameLabel.text = clientName
+      phoneToName.isActive = true
+      phoneToTop.isActive = false
       phoneLabel.font = UIFont(name: "SF-Pro-Display-Regular", size: 17)
     } else {
-      nameLabel.isHidden = true
+      nameLabel.removeFromSuperview()
+      phoneToName.isActive = false
+      phoneToTop.isActive = true
       phoneLabel.font = UIFont(name: "SF-Pro-Display-Semibold", size: 17)
-      phoneLabel.translatesAutoresizingMaskIntoConstraints = false
-      // todo
-      phoneLabel.topAnchor.constraint(equalTo: topAnchor, constant: 23).isActive = true
     }
 
     durationLabel.text = model.duration
