@@ -81,10 +81,9 @@ extension MissedCallsViewController: UITableViewDataSource {
 extension MissedCallsViewController: UITableViewDelegate {
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     guard let viewData = viewModel?.viewDataForIndexPath(indexPath: indexPath),
-          let detailNavVC = CallDetailsViewController.storyboardInstance(),
-          let detailVC = detailNavVC.topViewController as? CallDetailsViewController else { return }
+          let detailVC = CallDetailsViewController.storyboardInstance() else { return }
     detailVC.viewModel = CallDetailsViewModel(viewData: viewData)
-    present(detailNavVC, animated: true)
+    navigationController?.pushViewController(detailVC, animated: true)
   }
 }
 
