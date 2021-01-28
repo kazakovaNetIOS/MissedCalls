@@ -8,7 +8,7 @@
 import Foundation
 
 enum Constants {
-  static let url = "https://5e3c202ef2cb300014391b5a.mockapi.io/testapi"
+  static let url = "https://5e3c202ef2cb300014391b5a.mockapi.io/testapi1"
 }
 
 protocol DownloadManagerProtocol {

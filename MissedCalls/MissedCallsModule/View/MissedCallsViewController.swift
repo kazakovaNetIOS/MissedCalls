@@ -27,7 +27,7 @@ class MissedCallsViewController: UIViewController {
           self?.tableView.reloadData()
         case .failure(let error):
           self?.activityIndicator.stopAnimating()
-          print(error.localizedDescription)
+          self?.showError(with: error.localizedDescription)
         case .loading:
           self?.activityIndicator.startAnimating()
       }
@@ -39,6 +39,16 @@ class MissedCallsViewController: UIViewController {
 // MARK: - Private
 
 private extension MissedCallsViewController {
+  private func showError(with errorString: String) {
+    let alertController = UIAlertController(title: "Ошибка",
+                                            message: errorString,
+                                            preferredStyle: .alert)
+
+    alertController.addAction(UIAlertAction(title: "Отмена", style: .cancel))
+
+    present(alertController, animated: true)
+  }
+
   func setupView() {
     tableView.register(UINib(nibName: tableCellIdentifier, bundle: nil),
                        forCellReuseIdentifier: tableCellIdentifier)

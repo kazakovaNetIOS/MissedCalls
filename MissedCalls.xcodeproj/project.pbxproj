@@ -14,8 +14,6 @@
 		561B985A25C0BCA8008A40B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 561B985825C0BCA8008A40B6 /* LaunchScreen.storyboard */; };
 		561B986A25C0BD3F008A40B6 /* ViewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B986925C0BD3F008A40B6 /* ViewData.swift */; };
 		561B986F25C0C562008A40B6 /* MissedCallsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B986E25C0C562008A40B6 /* MissedCallsViewModel.swift */; };
-		561B987525C0D401008A40B6 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B987425C0D401008A40B6 /* TestView.swift */; };
-		561B987825C0D449008A40B6 /* TestView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 561B987725C0D449008A40B6 /* TestView + Extension.swift */; };
 		568A5F8A25C1CF820077F498 /* MissedCallsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A5F8825C1CF820077F498 /* MissedCallsTableViewCell.swift */; };
 		568A5F8B25C1CF820077F498 /* MissedCallsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 568A5F8925C1CF820077F498 /* MissedCallsTableViewCell.xib */; };
 		568A5F8F25C1D2410077F498 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568A5F8E25C1D2410077F498 /* NetworkService.swift */; };
@@ -42,8 +40,6 @@
 		561B985B25C0BCA8008A40B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		561B986925C0BD3F008A40B6 /* ViewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewData.swift; sourceTree = "<group>"; };
 		561B986E25C0C562008A40B6 /* MissedCallsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCallsViewModel.swift; sourceTree = "<group>"; };
-		561B987425C0D401008A40B6 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
-		561B987725C0D449008A40B6 /* TestView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TestView + Extension.swift"; sourceTree = "<group>"; };
 		568A5F8825C1CF820077F498 /* MissedCallsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissedCallsTableViewCell.swift; sourceTree = "<group>"; };
 		568A5F8925C1CF820077F498 /* MissedCallsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MissedCallsTableViewCell.xib; sourceTree = "<group>"; };
 		568A5F8E25C1D2410077F498 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -107,8 +103,6 @@
 			children = (
 				568A5F8725C1CF3D0077F498 /* Cell */,
 				561B985125C0BCA3008A40B6 /* MissedCallsViewController.swift */,
-				561B987425C0D401008A40B6 /* TestView.swift */,
-				561B987725C0D449008A40B6 /* TestView + Extension.swift */,
 				561B985325C0BCA3008A40B6 /* MissedCallsViewController.storyboard */,
 			);
 			path = View;
@@ -308,7 +302,6 @@
 			files = (
 				568A5F8A25C1CF820077F498 /* MissedCallsTableViewCell.swift in Sources */,
 				56C534DE25C225620080F255 /* Date+Extensions.swift in Sources */,
-				561B987525C0D401008A40B6 /* TestView.swift in Sources */,
 				561B986F25C0C562008A40B6 /* MissedCallsViewModel.swift in Sources */,
 				561B985225C0BCA3008A40B6 /* MissedCallsViewController.swift in Sources */,
 				568A5F8F25C1D2410077F498 /* NetworkService.swift in Sources */,
@@ -316,7 +309,6 @@
 				561B984E25C0BCA3008A40B6 /* AppDelegate.swift in Sources */,
 				56C534F125C237FE0080F255 /* CallDetailsViewModel.swift in Sources */,
 				561B986A25C0BD3F008A40B6 /* ViewData.swift in Sources */,
-				561B987825C0D449008A40B6 /* TestView + Extension.swift in Sources */,
 				56C534E825C234AB0080F255 /* CallDetailsViewController.swift in Sources */,
 				568A5F9425C1DA290077F498 /* MissedCallsParser.swift in Sources */,
 				56C534F925C2A2920080F255 /* DownloadManager.swift in Sources */,
